@@ -13,22 +13,18 @@ projection = d3.geo.mercator()
 
 var our_colors =
 
-["#EAC337",
-"#DC63BD",
-"#E85057",
-"#D08735",
-"#E55F2A",
-"#DF5784",
-"#D27EA9",
-"#AE9936",
-"#D3715C"]
+["#58876D",
+"#60D37E",
+"#6590B7",
+"#89D3DA",
+"#ACD7B3"]
 
 var default_colors = d3.scale.ordinal().range(our_colors) 
 
 // Choropleths and other maps require a colourscale. Because of the way choropleth .colorAccessor and .colourCalculator work with missing data, we need to also specify a colour for zero/missing, and a colourscale. map_zero_colour sholud be a little lighter (or whatever means "smaller" onyout chart) than the bottom value in the colourscale.
 
-var map_zero_colour = "#f0eaca"
-var colourscale = d3.scale.linear().range(["#ebdfa4","#907808"]) // grass green(for the maps)
+var map_zero_colour = "#e8faf0"
+var colourscale = d3.scale.linear().range(["#d2fce5","#123622"]) // grass green(for the maps)
  
 // -------------Date Formats-----------------------------
 
